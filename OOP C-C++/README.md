@@ -9,3 +9,7 @@ Algorithms to implement of the magic box puzzle
 Write a recursive function to compute the power operation x y
 ## D03L03P2.C
 Write a program to receive one employee`s data display the code, name , and net salary
+## D03L03P3.C
+Two functions to read an emloyees`s data and other to print its name with net salary
+## D03L03P4.C
+Program to receive data into an array of 5 employees, then display the code, name and net salary for each.
