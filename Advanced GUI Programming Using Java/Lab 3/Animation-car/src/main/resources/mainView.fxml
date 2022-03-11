@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.ArcTo?>
+<?import javafx.scene.shape.ClosePath?>
+<?import javafx.scene.shape.HLineTo?>
+<?import javafx.scene.shape.LineTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.Path?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gov.iti.jets.carController">
+    <center>
+
+
+                <AnchorPane>
+
+                    <Path fx:id="path" strokeWidth="20"  stroke="darkslateblue"  >
+                        <elements>
+                            <MoveTo x="100.0" y="50.0" />
+                            <HLineTo x="300" />
+                            <LineTo x="400.0" y="150.0" />
+                            <HLineTo x="600" />
+                            <ArcTo radiusX="50" radiusY="50" x="600" y="50" />
+                            <HLineTo x="400.0" />
+                            <LineTo x="300" y="150" />
+                            <HLineTo x="100" />
+                            <ArcTo radiusX="50" radiusY="50" sweepFlag="true" x="100" y="50" />
+                            <ClosePath />
+                        </elements>
+                    </Path>
+
+                    <ImageView fx:id="carImage" fitHeight="50.0" fitWidth="50.0">
+                        <Image url="@photos/car.png" />
+                    </ImageView>
+                    <ImageView fx:id="carImage2" fitHeight="50.0" fitWidth="50.0">
+                        <Image url="@photos/car2.png" />
+                    </ImageView>
+                </AnchorPane>
+
+    </center>
+</BorderPane>

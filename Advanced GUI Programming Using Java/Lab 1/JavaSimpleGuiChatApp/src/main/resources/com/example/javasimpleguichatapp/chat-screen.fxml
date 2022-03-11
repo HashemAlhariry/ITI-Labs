@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.javasimpleguichatapp.ChatScreenController">
+
+
+   <children>
+      <ImageView fitHeight="83.0" fitWidth="79.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" fx:id="profileImage" />
+      <Label alignment="CENTER" layoutX="150.0" layoutY="32.0" prefHeight="35.0" prefWidth="300.0" text="ITI" fx:id="labelText">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+
+      <ScrollPane fx:id="sp_main" layoutY="104.0" layoutX="42.0" prefHeight="241.0" prefWidth="517" fitToWidth="true">
+         <content>
+            <VBox fx:id="vbox_messages" prefHeight="230" prefWidth="517"/>
+         </content>
+      </ScrollPane>
+      <TextField layoutX="42.0" layoutY="353.0" prefHeight="25.0" prefWidth="517.0" fx:id="textFieldChat" onAction="#onEnter"  />
+   </children>
+
+
+</AnchorPane>
+
+
