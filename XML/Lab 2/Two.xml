@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<BookStore
+        xmlns="https://jets.iti.gov.eg/xml/book"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation ="https://jets.iti.gov.eg/xml/book Two.xsd">
+    <book category="science" InStock="true">
+        <title>GOT</title>
+        <author>Thunder</author>
+    </book>
+
+</BookStore>

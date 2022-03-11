@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<BookStore
+        xmlns="https://jets.iti.gov.eg/xml/book"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation ="https://jets.iti.gov.eg/xml/book one.xsd">
+        
+    <Book>
+        <title>GOT</title>
+        <Author>jack</Author>
+        <Date>2014-12-20</Date>
+        <ISBN>12</ISBN>
+        <publisher>hadeer</publisher>
+    </Book>
+
+</BookStore>

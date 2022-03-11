@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+ <!DOCTYPE library [
+
+    <!ELEMENT library (librarian+ , shelf+)> 
+    <!ELEMENT librarian (#PCDATA)>
+    <!ELEMENT shelf (book*)>  
+    <!ELEMENT book (auther, part+)>
+    <!ELEMENT auther (#PCDATA)>
+    <!ELEMENT part (chapter+)>
+    <!ELEMENT chapter (summary , section+)>
+    <!ELEMENT summary (#PCDATA)>
+    <!ELEMENT section (paragraphs+)>
+    <!ELEMENT paragraphs (#PCDATA)>
+
+
+    <!ATTLIST library location CDATA #REQIURED>
+    <!ATTLIST library description CDATA "Library">
+    <!ATTLIST librarian name CDATA #REQIURED>
+    <!ATTLIST shelf number ID #REQIURED>
+    <!ATTLIST shelf category CDATA #IMPLIED>
+    <!ATTLIST book ISBN ID #REQIURED>
+    <!ATTLIST book title CDATA #REQIURED>
+    <!ATTLIST part title CDATA>
+
+    <!ENTITY writer  "HASHEM">
+    <!ENTITY writer SYSTEM "age.ent">
+]>
+ 
+ 
+<library location="ITI" description="Sceintifc library">
+
+        <librarian name="Hashem"> &writer; &age;</librarian>
+
+        <shelf number="1" category="IT">  
+            <book ISBN="1" title="Hacking basics">
+                <auther>HASHEM ALHARIRY</auther>
+                <part title="part 1"> 
+                    <chapter title="chapter 1">
+                        <summary>This book about hacking</summary>
+                        <section>
+                            <paragraphs>Hello world Hacking</paragraphs>
+                            <paragraphs>This for begginers</paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>Hello from the other side</paragraphs>
+                            <paragraphs></paragraphs>
+                        </section>
+                    
+                    </chapter>
+                    <chapter title="chapter 2">
+                        <summary>Begin to use tools</summary>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... </paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... z</paragraphs>
+                        </section>
+                      
+                    </chapter>
+
+                    <chapter title="chapter 3">
+                        <summary>Begin to use tools</summary>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... </paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... z</paragraphs>
+                        </section>
+                    </chapter>
+                </part>
+
+                
+                <part title="part 2"> 
+                    <chapter title="chapter 1">
+                        <summary>This book about hacking</summary>
+                        <section>
+                            <paragraphs>Hello world Hacking</paragraphs>
+                            <paragraphs>This for begginers</paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>Hello from the other side</paragraphs>
+                            <paragraphs></paragraphs>
+                        </section>
+                    
+                    </chapter>
+                    <chapter title="chapter 2">
+                        <summary>Begin to use tools</summary>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... </paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... z</paragraphs>
+                        </section>
+                      
+                    </chapter>
+
+                    <chapter title="chapter 3">
+                        <summary>Begin to use tools</summary>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... </paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... z</paragraphs>
+                        </section>
+                    </chapter>
+                </part>
+            </book>
+
+            <book ISBN="2" title="Core Java">
+         
+                <auther>HASHEM ALHARIRY</auther>
+                <part title="part 1"> 
+                    <chapter title="chapter 1">
+                        <summary>This book about Java</summary>
+                        <section>
+                            <paragraphs>Hello world JAVA</paragraphs>
+                            <paragraphs>This for begginers</paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>Hello from the other side</paragraphs>
+                            <paragraphs></paragraphs>
+                        </section>
+                    
+                    </chapter>
+                    <chapter title="chapter 2">
+                        <summary>Begin to use JDK</summary>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... </paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... z</paragraphs>
+                        </section>
+                      
+                    </chapter>
+
+                    <chapter title="chapter 3">
+                        <summary>Begin to use Intellij</summary>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... </paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... z</paragraphs>
+                        </section>
+                    </chapter>
+                </part>
+
+                
+                <part title="part 2"> 
+                    <chapter title="chapter 1">
+                        <summary>Streams and lambda expression</summary>
+                        <section>
+                            <paragraphs>Functunal interface</paragraphs>
+                            <paragraphs>Lambda</paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>Hello from the other side</paragraphs>
+                            <paragraphs>employee.stream().map(employee::getSalary).toList();</paragraphs>
+                        </section>
+                    
+                    </chapter>
+                    <chapter title="chapter 2">
+                        <summary>Begin to use tools</summary>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... </paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... z</paragraphs>
+                        </section>
+                      
+                    </chapter>
+
+                    <chapter title="chapter 3">
+                        <summary>Begin to use tools</summary>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... </paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... z</paragraphs>
+                        </section>
+                    </chapter>
+                </part>
+            </book> 
+        </shelf>
+
+        <shelf number="2">  
+            <book ISBN="3" title="Database fundamental">
+         
+                <auther>HASHEM ALHARIRY</auther>
+                <part title="part 1"> 
+                    <chapter title="chapter 1">
+                        <summary>This book about Database</summary>
+                        <section>
+                            <paragraphs>Hello world Database</paragraphs>
+                            <paragraphs>This for begginers</paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>Hello from the other side</paragraphs>
+                            <paragraphs></paragraphs>
+                        </section>
+                    
+                    </chapter>
+                    <chapter title="chapter 2">
+                        <summary>Begin to use tools</summary>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... </paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... z</paragraphs>
+                        </section>
+                      
+                    </chapter>
+
+                    <chapter title="chapter 3">
+                        <summary>Begin to implement</summary>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... </paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... z</paragraphs>
+                        </section>
+                    </chapter>
+                </part>
+
+                
+                <part title="part 2"> 
+                    <chapter title="chapter 1">
+                        <summary>This book about database fundamentals</summary>
+                        <section>
+                            <paragraphs>Hello world Hacking</paragraphs>
+                            <paragraphs>This for begginers</paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>Hello from the other side</paragraphs>
+                            <paragraphs></paragraphs>
+                        </section>
+                    
+                    </chapter>
+                    <chapter title="chapter 2">
+                        <summary>SQL</summary>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... </paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... z</paragraphs>
+                        </section>
+                      
+                    </chapter>
+
+                    <chapter title="chapter 3">
+                        <summary>Oracle DB</summary>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... </paragraphs>
+                        </section>
+
+                        <section>
+                            <paragraphs>paragraph ..... </paragraphs>
+                            <paragraphs>paragraph ..... z</paragraphs>
+                        </section>
+                    </chapter>
+                </part>
+            </book>
+        </shelf>
+
+        <shelf number="1">  
+        </shelf>
+
+</library>

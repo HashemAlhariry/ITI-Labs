@@ -1,0 +1,20 @@
+<!ELEMENT library (librarian+ , shelf+)>
+<!ELEMENT librarian (#PCDATA)>
+<!ELEMENT shelf (book*)>
+<!ELEMENT book (auther, part+)>
+<!ELEMENT auther (#PCDATA)>
+<!ELEMENT part (chapter+)>
+<!ELEMENT chapter (summary , section+)>
+<!ELEMENT summary (#PCDATA)>
+<!ELEMENT section (paragraphs+)>
+<!ELEMENT paragraphs (#PCDATA)>
+
+<!ATTLIST library location CDATA #REQIURED>
+<!ATTLIST library description CDATA "Library">
+<!ATTLIST librarian name CDATA #REQIURED>
+<!ATTLIST shelf number ID #REQIURED>
+<!ATTLIST shelf category CDATA #IMPLIED>
+<!ATTLIST book ISBN ID #REQIURED>
+<!ATTLIST book title CDATA #REQIURED>
+<!ATTLIST part title CDATA>
+ 

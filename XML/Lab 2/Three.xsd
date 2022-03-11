@@ -1,0 +1,41 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+ targetNamespace="https://jets.iti.gov.eg/xml/book" 
+ xmlns="https://jets.iti.gov.eg/xml/book" 
+ elementFormDefault="qualified">
+  
+
+ <xs:element name="test">
+  <xs:complexType>
+      <xs:sequence>
+          <xs:element name="WeekDay">
+              <xs:simpleType>
+                  <xs:union memberTypes="weekstrings weeknumbers"/>
+              </xs:simpleType>
+          </xs:element>
+      </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+
+ <xs:simpleType name="weekstrings"> 
+  <xs:restriction base="xs:string">
+     <xs:enumeration value="Saturday"/>
+     <xs:enumeration value="Sunday"/>
+     <xs:enumeration value="Monday"/>
+     <xs:enumeration value="Tuesday"/>
+     <xs:enumeration value="Wednesday"/>
+     <xs:enumeration value="Thursday"/>
+     <xs:enumeration value="Friday"/>
+ </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="weeknumbers"> 
+<xs:restriction base="xs:positiveInteger">
+     <xs:minInclusive value="1"/>
+     <xs:maxInclusive value="7"/>
+ </xs:restriction>
+</xs:simpleType>
+
+
+
+</xs:schema>
