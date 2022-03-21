@@ -1,0 +1,112 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+    version="5.0"
+    metadata-complete="true">
+
+    <context-param>
+        <param-name>admin</param-name>
+        <param-value>Hashem</param-value>
+    </context-param>
+
+
+    <!--.........................-->
+
+    <servlet>
+        <servlet-name>servletOne</servlet-name>
+        <servlet-class>my.javabrains.HelloServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servletOne</servlet-name>
+        <url-pattern>/HelloServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--.........................-->
+
+    <servlet>
+        <servlet-name>servletTwo</servlet-name>
+        <servlet-class>my.javabrains.HelloServletAgain</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servletTwo</servlet-name>
+        <url-pattern>/HelloServletAgain</url-pattern>
+    </servlet-mapping>
+
+    <!--.........................-->
+
+    <servlet>
+        <servlet-name>servletThree</servlet-name>
+        <servlet-class>my.javabrains.ContentType1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servletThree</servlet-name>
+        <url-pattern>/contentType1</url-pattern>
+    </servlet-mapping>
+
+    <!--.........................-->
+
+    <servlet>
+        <servlet-name>servletFour</servlet-name>
+        <servlet-class>my.javabrains.ContentType2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servletFour</servlet-name>
+        <url-pattern>/contentType2</url-pattern>
+    </servlet-mapping>
+
+    <!--.........................-->
+
+    <servlet>
+        <servlet-name>servletFive</servlet-name>
+        <servlet-class>my.javabrains.ContentType3</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servletFive</servlet-name>
+        <url-pattern>/contentType3</url-pattern>
+    </servlet-mapping>
+
+    <!--.........................-->
+
+    <servlet>
+        <servlet-name>servletsix</servlet-name>
+        <servlet-class>my.javabrains.RequestHeaders</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servletsix</servlet-name>
+        <url-pattern>/requestHeaders</url-pattern>
+    </servlet-mapping>
+
+    <!--.........................-->
+
+    <servlet>
+        <servlet-name>servletseven</servlet-name>
+        <servlet-class>my.javabrains.SendRedirect</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servletseven</servlet-name>
+        <url-pattern>/sendredirect</url-pattern>
+    </servlet-mapping>
+
+    <!--.........................-->
+
+
+    <servlet>
+        <servlet-name>servleteight</servlet-name>
+        <servlet-class>my.javabrains.WelcomeUser</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servleteight</servlet-name>
+        <url-pattern>/welcomeUser</url-pattern>
+    </servlet-mapping>
+
+    <!--.........................-->
+</web-app>
