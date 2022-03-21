@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Lab 1</title>
+
+
+</head>
+
+<body>
+  <h1>The string to search in is:</h1>
+
+  <textarea id="searchstring" rows="10" cols="30"></textarea>
+  <br>
+  <br>
+
+  <input type="text" placeholder="Enter substring to search for" id="substring">
+  <input type="text" placeholder="At index" id="index">
+  <button id=button>Search</button>
+
+  <br>
+  <br>
+
+  <section>
+    <label>First occurence located at index:</label>
+    <input type="text" id="first">
+  </section>
+  <br>
+  <section>
+    <label>last occurence located at index:</label>
+    <input type="text" id="second">
+  </section>
+  <br>
+  <section>
+    <label>First occurence from your index located at index:</label>
+    <input type="text" id="third">
+  </section>
+  <br>
+  <section>
+    <label>last occurence from your indexlocated at index:</label>
+    <input type="text" id="forth">
+  </section>
+
+  <!--  why error putting script in head -->
+  <script>
+
+    function splitString() {
+
+      if (document.getElementById("substring").value.length != 0 && document.getElementById("searchstring").value.length) {
+        var searchString = document.getElementById("searchstring").value;
+        var substring = document.getElementById("substring").value;
+        var index = document.getElementById("index").value;
+
+        document.getElementById("first").value = searchString.indexOf(substring);
+        document.getElementById("second").value = searchString.indexOf(substring, index);
+        document.getElementById("third").value = searchString.lastIndexOf(substring);
+        document.getElementById("forth").value = searchString.lastIndexOf(substring, index);
+        
+      }
+
+    }
+    document.getElementById("button").onclick = splitString
+
+  </script>
+
+
+</body>
+
+</html>

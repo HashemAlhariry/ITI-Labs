@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Lab 2</title>
+
+</head>
+
+<body>
+
+  <br>
+  <label>Enter a sentence to split into words</label>
+  <input type="text" id="sentence">
+  <label>Split by</label>
+  <input type="text" id="delim">
+  <br>
+  <br>
+  <input type="submit" id=button>
+
+  <br>
+  <br>
+  <section>
+    <label>The sentence is split into this word</label>
+  </section>
+  <br>
+  <textarea id="result" rows="6" cols="20"></textarea>
+  <label>The first 10 characters are:</label>
+  <input type="text" id="first10">
+
+
+
+
+
+  <!--  why error putting script in head -->
+  <script>
+
+    function splitString() {
+
+      if (document.getElementById("sentence").value.length != 0) {
+
+        var searchString = document.getElementById("sentence").value;
+        var delim;
+        if (document.getElementById("delim").value.length != 0)
+          delim = document.getElementById("delim").value;
+        else
+          delim = " ";
+
+        document.getElementById("result").value = searchString.split(delim)
+        document.getElementById("first10").value = searchString.substring(0, 10)
+
+      }
+      
+    }
+    document.getElementById("button").onclick = splitString
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Lab 3</title>
+  <script>
+    
+    let number1 = prompt("Please Enter Number 1", 1);
+    let number2 = prompt("Please Enter Number 2", 1);
+    let number3 = prompt("Please Enter number 3", 1);
+
+    if (!isNaN(number1) && !isNaN(number2) && !isNaN(number3)) {
+
+      document.write("<h2>First Number is " + number1 + "</h2>");
+      document.write("<h2>Second Number is " + number2 + "</h2>");
+      document.write("<h2>Third Number is " + number3 + "</h2>");
+
+      document.write("<h1>Maximum Number is " + Math.max(number1, number2, number3) + "</h1>");
+      document.write("<h1>Third Number is " + Math.min(number1, number2, number3) + "</h1>");
+    }
+    else {
+      alert("PLEASE ENTER A NUMBER");
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html5>
+<html5>
+
+  <head>
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <link d="pageTheme" rel="stylesheet" href="styles/personal_website.css">
+    <title>Personal WebSite</title>
+    <script>
+      function changeCss() {
+        var pageTheme = document.getElementsByTagName('link')[0];
+        if (pageTheme.getAttribute("href") == "styles/personal_website.css") {
+          pageTheme.setAttribute('href', 'styles/personal_website1.css')
+          console.log(pageTheme);
+        }
+        else {
+          pageTheme.setAttribute('href', 'styles/personal_website.css');
+          console.log(pageTheme);
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <div class="box">
+      <img src="images/mypic.jpg" alt="" class="box-img">
+      <h1>
+        Hashem Alhariry</h1>
+      <h5>
+        Software Engineer</h5>
+      <p>
+        A backend is a programmer who specializes in, or is specifically engaged in, the development of World Wide
+        Web applications, or applications that are run over HTTP from a web server to a web browser.</p>
+
+
+      <table>
+        <br>
+        <tr>
+          <td>
+            <h4>Personal</h4>
+          </td>
+          <td>
+            <p>I graduated from faculty of <b>computer and artificial intelligence, cairo university</b> in the year of
+              <i>2020</i>
+            </p>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td>
+            <h4>My Intrests</h4>
+          </td>
+          <td>
+            <p>I am intrested in working as a <b><i>java <u>backend</u> developer</i></b> and I am also flexible in
+              working with any other other </p>
+          </td>
+        </tr>
+        <br>
+
+        </tr>
+      </table>
+
+      <h2>Skills</h2>
+      <section class="grid-container">
+        <div class="lightblue">
+          <p>Sprint</p>
+        </div>
+        <div class="lightblue">
+          <p>Android</p>
+        </div>
+        <div class="lightblue">
+          <p>js/nodejs</p>
+        </div>
+        <div class="lightblue">
+          <p>html</p>
+        </div>
+        <div class="lightblue">
+          <p>css</p>
+        </div>
+        <div class="lightblue">
+          <p>c/c++</p>
+        </div>
+        <div class="lightblue">
+          <p>reactjs</p>
+        </div>
+        <div class="lightblue">
+          <p>maven</p>
+        </div>
+        <div class="lightblue">
+          <p>IOS</p>
+        </div>
+      </section>
+
+      <h2>My Social Media</h2>
+      <ul>
+
+        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+
+      </ul>
+      <br>
+      <button class="lightblue" onclick="changeCss()">change theme</button>
+    </div>
+
+  </body>
+
+</html5>

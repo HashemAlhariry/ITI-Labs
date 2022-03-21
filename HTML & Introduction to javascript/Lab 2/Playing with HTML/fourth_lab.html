@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Lab 4</title>
+
+  <script>
+    var n;
+    function factorial(n) {
+      var counter;
+      var fact = 1;
+      if (n < 0) {
+        return -1;
+      }
+      else {
+        if (n >= 1) {
+          for (counter = 2; counter <= n; ++counter) {
+            fact *= counter;
+          }
+        }
+
+        return fact;
+      }
+    }
+
+    document.writeln("<table style = ' border: 1px solid;'>");
+    document.write("<h2>Factorial from 1 to 10 </h2>");
+    document.writeln("<tbody>");
+
+    for (n = 0; n <= 10; ++n) {
+      document.writeln("<tr style='background-color: black; color: white;'>")
+      document.writeln("<td>" + n + "</td>");
+      document.writeln("<td>" + factorial(n) + "</td>");
+      document.writeln("</tr>");
+    }
+
+    document.writeln("</tbody>");
+    document.writeln("</table>");
+
+    function getFactorial() {
+      let number1 = prompt("Please Enter a Number ", 1);
+      if (!isNaN(number1)) {
+        let factorialNumber = factorial(number1);
+        alert(factorialNumber);
+      } else {
+        alert("PLEASE ENTER A NUMBER");
+      }
+    }
+
+
+  </script>
+
+
+
+</head>
+
+<body>
+  <br>
+  <button onclick="getFactorial()">Find Factorial For</button>
+
+
+
+
+</body>
+
+</html>

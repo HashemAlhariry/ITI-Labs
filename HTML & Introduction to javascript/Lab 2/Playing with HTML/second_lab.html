@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Lab 2</title>
+  <script>
+
+    let number = prompt("Select a list style: \n 1(Bullet), 2(numbered), 3(Lettered)", 1);
+    if (number == "" || isNaN(number)) {
+      document.write("<h1>Enter valid number please</h1>");
+    }
+    else {
+
+      if (number == 1) {
+        document.write("<h1>Bullet List</h1>");
+        document.write("<br>");
+        document.write("<ul><li>List item 1</li><li>List item 2</li><li>List item 3</li></ul>");
+
+      }
+      else if (number == 2) {
+        document.write("<h1>Ordered List: Numbers</h1>");
+        document.write("<ol><li>List item 1</li><li>List item 2</li><li>List item 3</li></ol> ");
+
+      }
+      else if (number == 3) {
+        document.write("<h1>Ordered List: Letteres</h1>");
+        document.write(" <ol type = \"A\"> <li>List item 1</li><li>List item 2</li><li>List item 3</li></ol>");
+      }
+      else {
+        document.write("<h1>Please Enter number from 1, 2, 3 </h1>");
+      }
+    }
+
+
+  </script>
+
+</head>
+
+<body>
+
+
+
+
+</body>
+
+</html>

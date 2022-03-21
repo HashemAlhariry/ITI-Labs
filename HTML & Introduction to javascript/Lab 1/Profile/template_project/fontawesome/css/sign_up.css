@@ -1,0 +1,228 @@
+body  {  
+    background-color:#DACFFF  ;  
+    font-family: 'Arial';  
+}  
+ 
+h2{  
+    text-align: center;  
+    color: #FFF;  
+    padding: 10px;  
+}  
+
+label{  
+    color: #FFF;  
+    font-size: 15px;  
+   
+}  
+   
+hr.shape{
+    border: 0.01px solid black;
+    opacity: 0.2;
+    width: 250px;
+ 
+  }
+.signupform{  
+    width: 800px;  
+    margin-left: 400px;  
+    padding: 80px;  
+    background:#FFF;  
+    border-radius: 10px ;  
+}  
+
+.accountinformationdiv{
+    width: 800px;  
+    margin: auto;  
+    padding: 40px;  
+    background: #1ACCCC;  
+    border-radius: 10px ; 
+
+}
+.personalinformationdiv{
+    width: 800px;  
+    margin: auto;  
+    padding: 40px;  
+    background: #1ACCCC;  
+    border-radius: 10px ; 
+}
+
+.companyinformationdiv{
+    width: 800px;   
+    margin: auto;  
+    padding: 40px;  
+    background: #1ACCCC;;  
+    border-radius: 10px ; 
+}
+
+.buttonsdiv{
+    text-align: center;
+    margin: auto;  
+    border-radius: 10px ; 
+    padding: 40px;  
+}
+.contactinformationdiv{
+    width: 800px;  
+    margin: auto;  
+    padding: 40px;  
+    background: #1ACCCC;;  
+    border-radius: 10px ; 
+}
+#divlabel{
+   
+    color:black;
+   
+    font-size: 20px;  
+}
+
+#username{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    margin-top: 10px;
+    margin-left: 65px;
+
+}  
+#password{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    margin-top: 10px;
+        margin-left: 72px;
+ 
+}  
+#confirmpassword{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    margin-top: 10px;
+         margin-left: 10px;
+}  
+#creditcard{
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    margin-top: 10px;
+         margin-left: 32px;
+}
+#name{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    margin-top: 10px;
+    margin-left: 115px;
+
+}  
+#birthday{
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    margin-top: 10px;
+    margin-left: 65px;
+}
+#color{
+    width: 100px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    margin-top: 10px;
+    margin-left: 65px;
+}
+#picture{
+    width: 300px;  
+    height: 50px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    margin-top: 10px;
+    margin-left: 105px;
+}
+#favoritebrowser{
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    margin-top: 10px;
+    margin-left: 42px;
+}
+#numberofemployees{
+    width: 150px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    margin-top: 10px;
+    margin-left: 42px;
+}
+#estimatedrevenue{
+    width: 150px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    margin-top: 10px;
+    margin-left: 67px;
+}
+
+#emailaddress{
+      width: 150px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    margin-top: 10px;
+    margin-left: 72px;
+}
+
+#phonenumber{
+    width: 150px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    margin-top: 10px;
+    margin-left: 67px;
+}
+
+#website{
+  
+        width: 150px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;  
+        margin-top: 10px;
+        margin-left: 115px;
+ 
+    
+}
+
+#button1 , #button2 {
+    width: 150px;  
+    height: 50px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    }
+
+
+ 
+#button1:hover , #button2:hover {
+  
+        background-color:  #3E0144;
+        color: #FFF;
+}

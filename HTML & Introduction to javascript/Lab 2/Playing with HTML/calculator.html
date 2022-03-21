@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Calculator</title>
+
+  <script>
+
+    var numberAdded = "";
+    var totalNumber = 0;
+
+    function clearContent() {
+      document.getElementById("text").value = '';
+      numberAdded = "";
+      totalNumber = 0;
+      console.log("DELETE");
+
+    }
+    function add(a) {
+      var elem = document.getElementById("text");
+      elem.value = elem.value + a;
+      numberAdded += a;
+    }
+
+    function sum() {
+      document.getElementById("text").value = '';
+      totalNumber += Number(numberAdded);
+      numberAdded = "";
+      console.log(totalNumber)
+    }
+
+    function getTotalResult() {
+      console.log(eval(numberAdded));
+      document.getElementById("text").value = eval(numberAdded);
+
+    }
+
+  </script>
+
+
+
+</head>
+
+<body>
+
+  <input type="text" id="text" value=" ">
+  <br>
+  <br>
+  <input type="button" value="1" onclick="add('1')">
+  <input type="button" value="2" onclick="add('2')">
+  <input type="button" value="3" onclick="add('3') ">
+  <input type="button" value="+" onclick="add('+')">
+  <br>
+  <br>
+  <input type="button" value="4" onclick="add('4')">
+  <input type="button" value="5" onclick="add('5')">
+  <input type="button" value="6" onclick="add('6')">
+  <input type="button" value="-" onclick="add('-')">
+  <br>
+  <br>
+  <input type="button" value="7" onclick="add('7')">
+  <input type="button" value="8" onclick="add('8')">
+  <input type="button" value="9" onclick="add('9')">
+  <input type="button" value="*" onclick="add('*')">
+  <br>
+  <br>
+  <input type="button" value="/" onclick="add('/')">
+  <input type="button" value="0" onclick="add('0')">
+
+  <input type="button" value="=" onclick=" getTotalResult()"><br>
+  <br>
+  <br>
+  <input type="button" value="Clear" onclick=" clearContent()">
+
+
+
+
+</body>
+
+</html>

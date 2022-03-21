@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Lab 1</title>
+  <script>
+
+    var fonts = [
+      "Arial", "Arial Black", "Verdana", "Tahoma", "Trebuchet MS", "Impact", "Times New Roman"
+    ];
+
+    function generateRandomFont() {
+
+      var quoteIndex = Math.floor((Math.random() * fonts.length));
+      return fonts[quoteIndex];
+
+    }
+    console.log(generateRandomFont());
+
+    for (let i = 6; i >= 1; i--) {
+      document.write("<h" + i + " style= \"font-family: " + generateRandomFont() + "\"" + ">" + "Hello java script world H" + i + "</h" + i + ">" + "<br>");
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+
+
+
+</body>
+
+</html>
