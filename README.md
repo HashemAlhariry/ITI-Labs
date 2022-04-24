@@ -1,2 +1,2 @@
 # ITI_Labs 
-all labs taken for all courses 
+all labs taken at ITI
