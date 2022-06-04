@@ -1,0 +1,43 @@
+<xs:schema
+ xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+ targetNamespace="https://jets.iti.gov.eg/xml/book" 
+ xmlns="https://jets.iti.gov.eg/xml/book" 
+ elementFormDefault="qualified">
+
+
+
+ <xs:element name="BookStore">
+     <xs:complexType>
+        <xs:all>
+            <xs:element name="Book" minOccurs="1" type="bookType"/>
+        </xs:all>       
+   </xs:complexType>
+ </xs:element>
+
+
+    <xs:complexType name = "bookType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="Author" type="xs:string"/>
+            <xs:element name="Date" type="xs:string"/>
+            <xs:element name="ISBN" type="xs:integer"/>
+            <xs:element name="person" type="personType"/>
+            <xs:element name="address" type="addressType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addressType">
+        <xs:sequence>
+            <xs:element name="number" type="xs:unsignedInt" />
+            <xs:element name="street" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="personType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="address" type="addressType" />
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

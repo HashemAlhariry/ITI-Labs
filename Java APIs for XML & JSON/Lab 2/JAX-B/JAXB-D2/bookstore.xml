@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bookstore xmlns="" xmlns:ns2="http://jets.iti.gov/schemas/person">
+    <Book>
+        <title>FOR JAVA DEVLEOPER</title>
+        <Date>24/4/2022</Date>
+        <ISBN>1122334455</ISBN>
+        <person>
+            <name>Hashem Alhariry</name>
+            <address>
+                <number>25</number>
+                <street>Said Alhariry</street>
+            </address>
+        </person>
+        <address>
+            <number>25</number>
+            <street>Said Alhariry</street>
+        </address>
+    </Book>
+</bookstore>

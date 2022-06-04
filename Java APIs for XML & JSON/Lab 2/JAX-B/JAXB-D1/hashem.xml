@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<student>
+    <hobbies>
+        <hobby>Swimming</hobby>
+        <hobby>Running</hobby>
+        <hobby>Playing football</hobby>
+    </hobbies>
+    <email>hashem@gmail.com</email>
+    <addresses>
+        <address>
+            <city>giza</city>
+            <country>Egypt</country>
+            <street>28 street</street>
+        </address>
+        <address>
+            <city>Cairo</city>
+            <country>Egypt</country>
+            <street>NEW Cairo</street>
+        </address>
+        <address>
+            <city>Cairo</city>
+            <country>Egypt</country>
+            <street>NEW Cairo</street>
+        </address>
+        <address>
+            <city>Cairo</city>
+            <country>Egypt</country>
+            <street>NEW Cairo</street>
+        </address>
+        <address>
+            <city>Cairo</city>
+            <country>Egypt</country>
+            <street>NEW Cairo</street>
+        </address>
+    </addresses>
+    <student_name>Amin</student_name>
+</student>

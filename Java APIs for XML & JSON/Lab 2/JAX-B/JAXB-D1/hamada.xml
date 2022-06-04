@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<student id="123">
+    <email>amamin@iti.gov.eg</email>
+    <student_name>Amin</student_name>
+    <hobbies>
+        <hobby>Swimming</hobby>
+        <hobby>Running</hobby>
+    </hobbies>
+    <address>
+        <city>giza</city>
+        <country>egypt</country>
+        <street>28 street</street>
+    </address>
+</student>

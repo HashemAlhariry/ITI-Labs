@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person xmlns="http://jets.iti.gov/schemas/person">
+    <name>ahmed amin</name>
+    <address>
+        <number>99</number>
+        <street>giza, al-haram</street>
+    </address>
+</person>
