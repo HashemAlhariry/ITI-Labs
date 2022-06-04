@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<messages>
+    <message date="2022-04-06">
+        <from>amin</from>
+        <to>mazen</to>
+        <body lang="en">XML is Awesome dude</body>
+    </message>
+    <message date="2022-04-06">
+        <from>amin</from>
+        <to>mohsen</to>
+        <body lang="en">I really adore XML APIs</body>
+    </message>
+</messages>

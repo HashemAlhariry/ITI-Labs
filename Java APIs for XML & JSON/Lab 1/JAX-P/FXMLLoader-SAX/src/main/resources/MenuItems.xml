@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Menus>
+    <Menu fx-background-color="crimson" fx-font-weight="bold" text="File">
+        <Item>New File</Item>
+        <Item>Open File</Item>
+    </Menu>
+
+    <Menu fx-background-color="crimson" fx-font-weight="bold" text="Save">
+        <Item>Save new file</Item>
+        <Item>Save As</Item>
+        <Item>Save</Item>
+    </Menu>
+
+    <Menu fx-background-color="crimson" fx-font-weight="bold" text="Create">
+        <Item>create new blank</Item>
+        <Item>delete file</Item>
+    </Menu>
+</Menus>

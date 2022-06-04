@@ -1,0 +1,20 @@
+
+<MenuBar>
+    <Menu name="File">
+        <MenuItem>Open</MenuItem>
+        <MenuItem>Save</MenuItem>
+        <MenuItem>Close</MenuItem>
+    </Menu>
+    
+    <Menu name="Edit">
+        <MenuItem>Open</MenuItem>
+        <MenuItem>Save</MenuItem>
+        <MenuItem>Close</MenuItem>
+    </Menu>
+    
+    <Menu name="View">
+        <MenuItem>Open</MenuItem>
+        <MenuItem>Save</MenuItem>
+        <MenuItem>Close</MenuItem>
+    </Menu>
+</MenuBar>

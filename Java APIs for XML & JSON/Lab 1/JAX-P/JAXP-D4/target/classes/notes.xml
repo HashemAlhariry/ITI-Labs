@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<notes>
+    <note type="advice">
+        <from>amin</from>
+        <to>Student-1</to>
+        <body>XML is used for Data Exchange</body>
+    </note>
+
+    <note type="reminder">
+        <from>amin</from>
+        <to>Student-2</to>
+        <body>XML is used for Data Persistence</body>
+    </note>
+
+    <note type="tip">
+        <from>amin</from>
+        <to>Student-3</to>
+        <body lang="en">XML is used for Configuration Files</body>
+    </note>
+
+</notes>

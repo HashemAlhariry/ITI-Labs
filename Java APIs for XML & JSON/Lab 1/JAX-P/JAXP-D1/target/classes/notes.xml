@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Notes>
+    <Note type="advice">
+        <From>amin</From>
+        <Body>XML is Awesome</Body>
+    </Note>
+
+    <Note type="Fact">
+        <From>Hashem</From>
+        <Body>Java track is awesome</Body>
+    </Note>
+
+    <Note type="News">
+        <From>El youm el sabe</From>
+        <Body>Egypt lost final match for qualification to final match</Body>
+    </Note>
+
+</Notes>
