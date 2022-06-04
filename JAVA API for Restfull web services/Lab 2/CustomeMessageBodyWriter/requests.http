@@ -1,0 +1,14 @@
+GET http://localhost:9090/customMessage/api/employees HTTP/1.1
+Accept: text/plain
+
+###
+
+POST http://localhost:9090/customMessage/api/employees HTTP/1.1
+Content-Type: text/plain
+
+Employee [id=123, firstName=amin, salary=10]
+
+ 
+
+
+

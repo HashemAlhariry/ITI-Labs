@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="logincss.css" />
+</head>
+
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form method="post">
+        <div class="imgcontainer">
+            <img src="personal-picture .jpg" alt="user photo" class="avatar">
+        </div>
+
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <label for="age"><b>Age</b></label>
+            <input type="number" placeholder="Enter your Age" name="age" required min="11"><br />
+
+            <label for="department"><b>Department</b></label>
+            <input type="text" placeholder="Enter department" name="department" required>
+
+            <input type="hidden" name="hiddenElement" value="hiddenElementValue">
+
+
+            <input type="submit" value="Register"><br />
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

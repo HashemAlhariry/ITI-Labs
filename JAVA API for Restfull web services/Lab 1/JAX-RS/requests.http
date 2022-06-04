@@ -1,0 +1,72 @@
+GET http://localhost:9090/jax-rs/api/resource1 HTTP/1.1
+Accept: application/json
+
+###
+GET http://localhost:9090/jax-rs/v1/resource1 HTTP/1.1
+Accept: application/XML
+
+###
+GET http://localhost:9090/jax-rs/v1/resource1/0 HTTP/1.1
+Accept: application/json
+
+###
+GET http://localhost:9090/jax-rs/v1/resource1/4 HTTP/1.1
+Accept: application/xml
+###
+POST http://localhost:9090/jax-rs/v1/resource1 HTTP/1.1
+Content-Type: application/xml
+Accept: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employee>
+  <age>40</age>
+  <firstName>ITI</firstName>
+  <id>12</id>
+  <lastName>SMART VILLAGE</lastName>
+</employee>
+
+####
+POST http://localhost:9090/jax-rs/v1/resource1 HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id": 9,
+     "department": {
+      "firstName": "QA",
+      "id": 1
+    },
+    "firstName": "ABC",
+    "lastName": "DEF",
+    "age": 24
+}
+
+####
+PUT http://localhost:9090/jax-rs/v1/resource1/9 HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id": 9,
+    "firstName": "CCC",
+    "lastName": "DDD",
+    "age": 24
+}
+
+####
+DELETE http://localhost:9090/jax-rs/v1/resource1/3 HTTP/1.1
+Accept: application/json
+
+####
+DELETE http://localhost:9090/jax-rs/v1/resource1/ HTTP/1.1
+Accept: application/json
+
+
+
+GET http://localhost:9090/jax-rs/v1/resource1/1/department HTTP/1.1
+Accept: application/json
+
+###
+
+
+

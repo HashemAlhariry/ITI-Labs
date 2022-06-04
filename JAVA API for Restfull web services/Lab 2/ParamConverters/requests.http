@@ -1,0 +1,7 @@
+GET http://localhost:9090/param-conv/api/resource2/tomorrow HTTP/1.1
+Accept: text/plain
+
+###
+ 
+
+
