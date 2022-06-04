@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="card" style="width: 70rem;">
+        <div class="card-header">
+  
+
+      <div class="row">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Mobile</th>
+                <th scope="col">Email</th>
+                <th scope="col">NationalID</th>
+                <th scope="col">Age</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let student of students;let currentIndex=index">
+                <th scope="row"> {{currentIndex+1}}</th>
+              
+                  <!-- <a [routerLink]="['/tasks/details',task.ID]">
+                    {{task.Title}} -- {{task.ID}}
+                  </a> -->
+                  <!--
+                  <a routerLink="/tasks/details/{{task.ID}}">
+                    {{task.Title}} -- {{task.ID}}
+                  </a>
+                  -->
+                <td><a routerLink="details/{{student.ID}}">
+                  {{student.ID}}
+                </a></td>
+                <td> {{student.Name}} </td>
+                <td>{{student.Mobile}}</td>
+                <td>{{student.Email}}</td>
+                <td>{{student.NationalID}}</td>
+                <td>{{student.Age}}</td>
+                <!--
+                <td>
+                    <input type="checkbox" [value]="task.IsDone" (change)="update(task)">
+                </td>
+                <td> 
+                    <button class="btn btn-danger" (click)="delete(currentIndex)">DELETE</button>
+                </td>
+                -->
+              </tr>
+            
+            </tbody>
+          </table>
+      </div>
+      </div>
+</div>
