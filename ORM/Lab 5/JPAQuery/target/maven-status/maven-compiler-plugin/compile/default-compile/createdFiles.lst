@@ -1,0 +1,10 @@
+com/ecommerce/repositories/entites/Category.class
+com/ecommerce/repositories/entites/BuyerBidProductId.class
+com/ecommerce/repositories/entites/BuyerBidProduct.class
+com/ecommerce/repositories/entites/User.class
+com/ecommerce/repositories/entites/BuyerBuyProduct.class
+com/ecommerce/repositories/entites/Product.class
+com/ecommerce/repositories/entites/BuyerBuyProductId.class
+com/ecommerce/MainTest.class
+com/ecommerce/repositories/entites/Buyer.class
+com/ecommerce/repositories/entites/Seller.class
