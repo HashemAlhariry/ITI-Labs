@@ -1,0 +1,7 @@
+ 
+
+<input #inputFirstName type="text" value="{{firstName}}" placeholder="First Name">
+<input #inputLastName type="text" value="{{lastName}}" placeholder="Last Name">
+<input #inputDepartment type="text" value="{{department}}" placeholder="Department">
+<button (click)="addEmployee(inputFirstName.value,inputLastName.value,inputDepartment.value)" >Add Employee</button>
+<p> you added {{getTotalNumber()}}</p>

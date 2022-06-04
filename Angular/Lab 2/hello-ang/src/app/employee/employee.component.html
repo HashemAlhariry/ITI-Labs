@@ -1,0 +1,33 @@
+ 
+
+
+<input #inputFirstName type="text" [value]="firstName" placeholder="First Name">
+<input #inputLastName type="text" value="{{lastName}}" placeholder="Last Name">
+<input #inputAge type="number" value="{{age}}"  placeholder="Age" >
+<button (click)="add(inputFirstName.value,inputLastName.value,+inputAge.value)">Add Employee</button>
+<h1> you added {{getTotalNumber()}}</h1>
+ 
+
+ <table>
+     <thead>
+        <tr>
+          <th>#</th>
+          <th>Full Name </th>
+          <th>Age </th>
+          <th>Action </th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr *ngFor="let employee of arrEmployee; let currentIndex=index">
+            <td>{{currentIndex+1}}</td>
+            <td>{{employee.firstName}} {{employee.lastName}}</td>
+            <td [class.red-color] ="age>=20">{{employee.age}}</td> 
+        <td>  
+          <button (click)="deleteEmployee(currentIndex)">DELETE</button>
+        </td>
+
+      </tr>
+    </tbody>
+    
+ 
+ </table>
