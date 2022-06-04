@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3306/myschema" />
+        <property name="username" value="root" />
+        <property name="password" value="pluralsight"/>
+    </bean>
+
+    <bean id="userDAO" class="gov.iti.jets.bean.jdbc.JDBCUserDao">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="userDao2" class="gov.iti.jets.bean.jdbc.JDBCUserDao2">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+
+    <bean id="userDao3" class="gov.iti.jets.bean.jdbc.JDBCUserDao3">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="user" class="gov.iti.jets.bean.models.User"/>
+
+
+
+
+</beans>
