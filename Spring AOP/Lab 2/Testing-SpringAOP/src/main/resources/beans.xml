@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <aop:aspectj-autoproxy/>
+    <bean id="calculatorImpl" class="gov.iti.jets.impl.CalculatorImpl"/>
+    <bean id="calculatorImpl2" class="gov.iti.jets.impl.CalculatorImpl2"/>
+
+    <bean id="calcBefore" class="gov.iti.jets.CalculatorBefore"/>
+    <bean id="calcAfter" class="gov.iti.jets.CalculatorAfter"/>
+    <bean id="calcAfterReturn" class="gov.iti.jets.CalculatorAfterReturn"/>
+    <bean id="calcAfterThrow" class="gov.iti.jets.CalculatorAfterThrow"/>
+    <bean id="calcAround" class="gov.iti.jets.CalculatorAround"/>
+
+    <!-- beans behavior -->
+    <bean id="calculatorImpl3" class="gov.iti.jets.behaviors.impl.CalcImpl"/>
+    <bean id="aspect" class="gov.iti.jets.behaviors.CalculatorAspect"/>
+    <bean id="maxCalc" class="gov.iti.jets.behaviors.impl.MaxCalculatorImpl"/>
+    <bean id="minCalc" class="gov.iti.jets.behaviors.impl.MinCalculatorImpl"/>
+
+    <!-- strings -->
+
+
+</beans>
