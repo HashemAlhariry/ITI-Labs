@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+
+    <!-- Bean Definition inheritance -->
+    <bean id="parent" abstract="true" >
+        <property name="name" value="parent name"/>
+        <property name="age" value="20"/>
+    </bean>
+
+    <bean id="child" parent="parent"
+          class="gov.iti.jets.bean.inheritance.Child" >
+        <property name="address" value="Giza,Egypt"/>
+    </bean>
+
+
+    <!-- Bean Definition inheritance and collections -->
+    <bean id="user" class="gov.iti.jets.bean.collection.User">
+        <constructor-arg index="0" value="Hashem"/>
+        <constructor-arg index="1" value="Alhariry"/>
+    </bean>
+
+    <bean id="parent2" abstract="true" class="gov.iti.jets.bean.collection.ChildCollection">
+        <property name="objectList">
+            <list>
+                <value>Hello Guys</value>
+                <ref bean="user"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="child2" parent="parent2">
+        <property name="objectList">
+            <list merge="true">
+                <value>Hello </value>
+                <ref bean="user"/>
+            </list>
+        </property>
+    </bean>
+
+
+    <!-- difference between xml injection and @inject .... @inject injects before xml -->
+    <bean id="classB" class="gov.iti.jets.bean.annotation.xml_inject.ClassB">
+        <constructor-arg>
+            <value>Hello from xml classb1</value>
+        </constructor-arg>
+    </bean>
+    <bean id="classA" class="gov.iti.jets.bean.annotation.xml_inject.ClassA"/>
+
+
+    <!-- required annotation -->
+    <bean id="simpleMovieLister" class="gov.iti.jets.bean.annotation.required.SimpleMovieLister">
+        <property name="movieFinder">
+            <ref bean="movieFinder"/>
+        </property>
+    </bean>
+
+    <bean id="movieFinder" class="gov.iti.jets.bean.annotation.required.MovieFinder">
+        <constructor-arg>
+            <value>Game Of Thrones</value>
+        </constructor-arg>
+    </bean>
+
+    <!-- autowire annotation -->
+    <bean id="classAutowire1" class="gov.iti.jets.bean.annotation.autowire.ClassAutoWire1"/>
+    <bean id="classAutowire2" class="gov.iti.jets.bean.annotation.autowire.ClassAutoWire2">
+        <property name="message">
+            <value>Hello from class Autowire2</value>
+        </property>
+    </bean>
+
+</beans>

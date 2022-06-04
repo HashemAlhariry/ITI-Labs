@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <import resource="department-bean.xml"/>
+
+
+
+
+    <bean id="employeeID" class="gov.iti.jets.bean.Employee"/>
+
+    <bean id="departmentDetailsID" class="gov.iti.jets.bean.DepartmentDetails"/>
+
+    <bean id="factory" class="gov.iti.jets.bean.BeanFactory"/>
+
+    <bean id="employeeIDTest1" class="gov.iti.jets.bean.Employee">
+        <constructor-arg type ="java.lang.String" value="Hashem"/>
+        <constructor-arg type ="int" value="1234"/>
+    </bean>
+
+    <bean id="employeeFactoryMethod"
+          class="gov.iti.jets.bean.BeanFactory"
+          factory-method="createEmployee"/>
+
+    <bean id="departmentFactoryMethod"
+          class="gov.iti.jets.bean.BeanFactory"
+          factory-method="createDepartment"/>
+
+    <bean id="departmentTest2"
+          factory-bean="factory"
+          factory-method="createDepartment">
+        <constructor-arg index="0" value="Java"/>
+        <constructor-arg index="1" ref="departmentDetailsID"/>
+    </bean>
+
+
+
+</beans>

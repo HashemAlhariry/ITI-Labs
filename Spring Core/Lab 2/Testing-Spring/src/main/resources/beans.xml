@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <import resource="department-bean.xml"/>
+
+    <!--  DataSource  -->
+    <bean id="myDataSource" class="gov.iti.jets.bean.BasicDataSource"
+    p:driverClassName="com.mysql.jdbc.Driver"
+    p:url="jdbc:mysql://localhost:3306/mydb"
+    p:userName="admin"
+    p:password="admin"/>
+
+
+    <!--  idref  -->
+    <bean id="departmentDetailsTest1" class="gov.iti.jets.bean.DepartmentDetails">
+        <property name="name" value="string-test"/>
+    </bean>
+    <bean id="department" class="gov.iti.jets.bean.Department" >
+        <property name="departmentDetails" ref="departmentDetailsTest1"/>
+        <property name="name">
+            <idref bean="departmentDetailsTest1"/>
+        </property>
+    </bean>
+
+
+
+    <!--  Collection  -->
+    <bean id="employeeAddressesList" class="gov.iti.jets.bean.Employee">
+        <property name="name" value="Hashem"/>
+        <property name="id" value="123456"/>
+        <property name="addresses">
+            <list>
+                <value>
+                    Giza,Egypt
+                </value>
+                <value>
+                    Cairo,Egypt
+                </value>
+                <value>
+                    Luxor,Egypt
+                </value>
+            </list>
+        </property>
+    </bean>
+
+
+    <!--  Autowiring by name  -->
+    <bean id="classA" class="gov.iti.jets.bean.wiringbyname.ClassA" autowire="byName"/>
+    <bean id="classB" class="gov.iti.jets.bean.wiringbyname.ClassB" />
+
+
+    <!--  Autowiring by type  -->
+    <!--  autowire-candidate="false" for type only not for name  -->
+    <bean id="classAType" class="gov.iti.jets.bean.wiringbytype.ClassA" autowire="byType"/>
+    <bean id="classBType" class="gov.iti.jets.bean.wiringbytype.ClassB" />
+
+
+    <!--  Singleton  -->
+    <bean id="userSingleton" class="gov.iti.jets.bean.scopes.UserSingleton" scope="singleton" />
+    <!--  Prototype  -->
+    <bean id="userPrototype" class="gov.iti.jets.bean.scopes.UserPrototype" scope="prototype"/>
+
+</beans>
